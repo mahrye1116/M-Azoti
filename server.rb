@@ -12,8 +12,8 @@ get '/about' do
   erb :about
 end
 
-get '/appraisals' do
-  erb :appraisals
+get '/services' do
+  erb :services
 end
 
 get '/photography' do
