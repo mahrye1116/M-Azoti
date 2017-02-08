@@ -16,12 +16,8 @@ get '/services' do
   erb :services
 end
 
-get '/photography' do
-  erb :photography
-end
-
-get '/links' do
-  erb :links
+get '/resources' do
+  erb :resources
 end
 
 get '/contact' do
