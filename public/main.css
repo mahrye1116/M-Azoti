@@ -140,7 +140,10 @@ textarea {
    .about-image {
      padding: 5px 15px 5px 15px;
      margin: 0 auto 10px auto;
-     display: inline-block;
+     float: left;
+     max-width: 50%;
+     width: 100%;
+     padding: 0 50px;
    }
 
    .secondary-page {
@@ -166,12 +169,12 @@ textarea {
    }
 
    footer {
-     position: absolute;
-     bottom: 0;
+     position: fixed;
      width: 100%;
    	 background-color: #FFFFFF;
      padding: 1px;
      padding-right: 15px;
+     bottom: 0px;
    }
 
    #copyright {
@@ -186,6 +189,7 @@ textarea {
      list-style-type: none;
      line-height: 2rem;
    }
+
    a {
    	color: #000000;
    	text-decoration: none;
