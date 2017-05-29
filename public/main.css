@@ -135,19 +135,34 @@ textarea {
      padding: 5px 15px 5px 15px;
      margin: 0 auto 10px auto;
      font-size: 25px;
+     width: 100vw;
    }
 
    .about-image {
-     padding: 5px 15px 5px 15px;
-     margin: 0 auto 10px auto;
-     float: left;
-     max-width: 50%;
-     width: 100%;
-     padding: 0 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /*background-color: red;*/
+   }
+
+   .about-text {
+     max-width: 40vw;
+     margin-left: 80px;
+     /*background-color: yellow;*/
+   }
+
+   .about-text p {
+     margin: 0;
    }
 
    .secondary-page {
-     animation: fadeIn 5s;
+     /*animation: fadeIn 5s;*/
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-left: 10px;
+     padding-bottom: 50px;
+     padding-top: 50px;
    }
 
    nav {
@@ -168,20 +183,32 @@ textarea {
    	padding: 0px 0px 5px 15px;
    }
 
+   .page-body {
+     height: 100%;
+   }
+
    footer {
-     position: fixed;
-     width: 100%;
-   	 background-color: #FFFFFF;
+     /*position: fixed;*/
+   	 /*background-color: #FFFFFF;*/
      padding: 1px;
-     padding-right: 15px;
-     bottom: 0px;
+     /*padding-right: 15px;*/
+     /*bottom: 0;
+     right: 0;*/
+   }
+
+   .footer-text {
+     margin-right: 10px;
+     margin-left: 10px;
    }
 
    #copyright {
+    width: 100%;
+    border-top: 1px solid lightgrey;
     font-family: 'Oswald', sans-serif;
    	color: #000000;
     font-size: 12px;
    	text-align: right;
+    padding-top: 10px;
    }
 
    ul {
