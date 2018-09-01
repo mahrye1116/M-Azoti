@@ -15,7 +15,6 @@
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
         <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
-
     </head>
 
     <body>
@@ -25,33 +24,30 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="container">
-          <header>
-            <a href="/index">
-              <h1 id="company">MARIAH AZOTI</h1>
-            </a>
-            <h2><%= @page_name %></h2>
-            <nav>
-              <ul>
-                <li>
-                  <a href="/about">ABOUT</a>
-                </li>
-                <li>
-                  <a href="/services">SERVICES</a>
-                </li>
-                <li>
-                  <a href="/resources">RESOURCES</a>
-                </li>
-                <li>
-                  <a href="/contact">CONTACT</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+        <div id="title-bar">
+          <a href="/index">
+            <div id="page-title">
+              <h1>MARIAH AZOTI</h1>
+            </div>
+          </a>
+          <div id="page-name">
+            <h2 class="current-page about inactive">ABOUT</h2>
+            <h2 class="current-page services inactive">SERVICES</h2>
+            <h2 class="current-page resources inactive">RESOURCES</h2>
+            <h2 class="current-page contact inactive">CONTACT</h2>
+          </div>
         </div>
+        <div id="nav-bar">
+          <a href="/about"><h2 class="page-link about nav">ABOUT</h2></a>
+          <a href="/services"><h2 class="page-link services nav">SERVICES</h2></a>
+          <a href="/resources"><h2 class="page-link resources nav">RESOURCES</h2></a>
+          <a href="/contact"><h2 class="page-link contact nav">CONTACT</h2></a>
+        </div>
+
         <div class="page-body">
           <%= yield %>
         </div>
+
         <div class="container">
           <footer>
             <div class="footer-text">
@@ -73,6 +69,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
 

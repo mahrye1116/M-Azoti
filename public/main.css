@@ -131,6 +131,53 @@ textarea {
     margin-top: 20px;
    }
 
+   #title-bar {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   #nav-bar {
+     display: flex;
+     justify-content: flex-end;
+     border-top: 2px solid black;
+   }
+
+   #page-title {
+     padding-left: 10px;
+     padding-right: 10px;
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.5em;
+     text-shadow: 2px 2px 2px #aaa;
+   }
+
+   #page-title h1 {
+     margin: 0;
+   }
+
+   .current-page {
+     font-family: 'Oswald', sans-serif;
+     font-size: 16px;
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+
+   #page-name {
+     display: flex;
+     align-items: flex-end;
+   }
+
+   .inactive {
+     color: white;
+   }
+
+   .page-link {
+     color: black;
+     padding-left: 10px;
+     padding-right: 10px;
+     font-family: 'Oswald', sans-serif;
+     font-size: 16px;
+   }
+
    .page-header {
      padding: 5px 15px 5px 15px;
      margin: 0 auto 10px auto;

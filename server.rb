@@ -6,6 +6,7 @@ get '/' do
 end
 
 get '/index' do
+  @page_name = "HOME"
   erb :index
 end
 
