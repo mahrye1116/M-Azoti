@@ -1,50 +1,119 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 100vw;
+  justify-content: space-between;
+  font-family: 'Source Code Pro', monospace;
+  background-color: #2D4053;
 }
 
 .App-header {
-  background-color: #2D4053;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: top;
-}
-
-.main-title {
-  max-width: 100vw;
   padding: 2vw;
-  color: white;
+  color: #FAE053;
   text-align: left;
 }
 
-.main-title h1 {
-  font-family: 'Source Code Pro', monospace;
+.App-header h1 {
   font-weight: 400;
   font-size: 10em;
   margin: 2vh;
 }
 
-.main-title h2 {
+.App-header h2 {
   font-weight: 300;
-  font-size: 5em;
   font-style: italic;
+  font-size: 4em;
   margin: 2vh;
 }
 
-.main-title h3 {
-  font-weight: 200;
-  font-size: 1.75em;
-  margin: 2vh;
+.App-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.service-name {
+  color: white;
+  font-size: 1.5em;
+  padding: 2vw;
+  margin: 0;
+}
+
+.App-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.contact-link {
+  background-color: #FAE053;
+  width: 50vw;
+  text-align: center;
+  padding: 25px;
+  transition: 0.5s ease;
+  color: #2D4053;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* PHONE STYLING */
-@media only screen and (max-device-width: 480px) {
-  .main-title {
-    padding: 20px;
+@media only screen and (max-device-width: 500px) {
+  .App {
+    justify-content: flex-start;
   }
 
-  .main-title h1 {
+  .App-header h1 {
     font-size: 3em;
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .App-header h2 {
+    font-size: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:0;
+    margin-bottom: 30px;
+  }
+
+  .App-body {
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 50px;
+  }
+
+  .service-name {
+    font-size: 1.25em;
+    padding: 5px;
+  }
+
+  .App-footer {
+    flex-direction: column;
+  }
+
+  .contact-link {
+    width: 100vw;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-link:hover {
+    background-color: #FAE053;
   }
 }
