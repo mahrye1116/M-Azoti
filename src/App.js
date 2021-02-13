@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Azoti Consulting & Art Services
-        </p>
+        <div className="main-title">
+          <h1>Azoti Consulting & Art Services</h1>
+        </div>
       </header>
     </div>
   );
