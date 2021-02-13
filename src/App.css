@@ -14,14 +14,28 @@
 .main-title {
   max-width: 100vw;
   padding: 2vw;
+  color: white;
+  text-align: left;
 }
 
 .main-title h1 {
   font-family: 'Source Code Pro', monospace;
   font-weight: 400;
-  font-size: 100px;
-  text-align: left;
-  color: white;
+  font-size: 10em;
+  margin: 2vh;
+}
+
+.main-title h2 {
+  font-weight: 300;
+  font-size: 5em;
+  font-style: italic;
+  margin: 2vh;
+}
+
+.main-title h3 {
+  font-weight: 200;
+  font-size: 1.75em;
+  margin: 2vh;
 }
 
 /* PHONE STYLING */

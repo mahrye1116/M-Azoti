@@ -6,9 +6,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div className="main-title">
-          <h1>Azoti Consulting & Art Services</h1>
+          <h1>Mariah Azoti</h1>
+          <h2>Digital Marketing & Art Consulting Services</h2>
+          <h3>
+            Demonstrated history in social media strategy and implementation, 
+            digital asset management, brand development, and more.
+          </h3>
         </div>
       </header>
+      <div className="App-body">
+        
+      </div>
     </div>
   );
 }
